@@ -1,7 +1,27 @@
 # CompanyLookup
 Lookup companies
 
-### [Example Code Link](https://github.com/Monnapse/CompanyLookup/blob/main/__main__.py)
+# Lookup Methods
+### *SIMPLE*
+Pros
+- Faster
+- uses less resources
+- Uses 1 serper credit
+
+Cons
+- Less acurrate.
+
+### *ENHANCED*
+Pros
+- Alot more accurate.
+
+Cons
+- Slower, 
+- Uses more resources
+- Uses 2 serper credits.
+
+
+## [Example Code Link](https://github.com/Monnapse/CompanyLookup/blob/main/__main__.py)
 ```python
 from companylookup import CompanyLookup, LookupMethod
 
