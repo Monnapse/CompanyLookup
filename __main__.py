@@ -5,7 +5,7 @@
 from companylookup.analyze import analyze_company_snippet
 #from companylookup.serper.types import OrganicResult
 
-from companylookup import CompanyLookup, LookupType
+from companylookup import CompanyLookup, LookupMethod
 from dotenv import load_dotenv
 import os
 load_dotenv()
@@ -96,7 +96,7 @@ if __name__ == "__main__":
 
   company_result = company_lookup.lookup(
     company_name="Momentum Telecom",
-    lookup_type=LookupType.ENHANCED,
+    lookup_method=LookupMethod.ENHANCED,
     description="MetrolineDirect specializes in telecom products and services."
   )
   # "POPP Communications" official site contact "contact" OR "support" OR "@gmail.com" OR "phone" OR "call" OR "call us" OR "email"

@@ -1,5 +1,5 @@
 from enum import Enum
 
-class LookupType(Enum):
+class LookupMethod(Enum):
     SIMPLE = "simple"
     ENHANCED = "enhanced"

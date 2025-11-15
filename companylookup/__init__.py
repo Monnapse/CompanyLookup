@@ -1,5 +1,5 @@
 from .serper import SerperClient
-from .types.enums import LookupType
+from .types.enums import LookupMethod
 from .types import CompanyAnalysisComplete, Company, CompanyAnalysis, OrganicResult
 from companylookup.analyze import analyze_company_list, analyze_company_snippet
 from typing import Tuple
@@ -57,7 +57,7 @@ class CompanyLookup:
     def lookup(
             self, 
             company_name: str, 
-            lookup_type: LookupType = LookupType.SIMPLE,
+            lookup_method: LookupMethod = LookupMethod.SIMPLE,
             description: str | None = None,
         ) -> CompanyAnalysisComplete:
         """
@@ -71,16 +71,16 @@ class CompanyLookup:
         # Checks
         if not company_name:
             raise ValueError("Company name must be provided for lookup.")
-        if not lookup_type:
-            raise ValueError("Lookup type must be specified.")
+        if not lookup_method:
+            raise ValueError("Lookup method must be specified.")
 
         # Perform lookup based on type
         highest_analysis: CompanyAnalysis = None
         highest_result: OrganicResult = None
-        if lookup_type == LookupType.SIMPLE:
+        if lookup_method == LookupMethod.SIMPLE:
             # SIMPLE LOOKUP LOGIC
             highest_analysis, highest_result = self.simple_lookup(company_name)
-        elif lookup_type == LookupType.ENHANCED:
+        elif lookup_method == LookupMethod.ENHANCED:
             # ENHANCED LOOKUP LOGIC
             highest_analysis, highest_result = self.enhanced_lookup(company_name)
 
