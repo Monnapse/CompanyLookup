@@ -1,7 +1,7 @@
 # CompanyLookup
 Lookup companies
 
-### [Example Code Link]()
+### [Example Code Link](https://github.com/Monnapse/CompanyLookup/blob/main/__main__.py)
 ```python
 from companylookup import CompanyLookup, LookupMethod
 
