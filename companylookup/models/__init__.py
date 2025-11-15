@@ -4,7 +4,7 @@ from ..serper.models import OrganicResult
 class Company(BaseModel):
     name: str | None
     website: str | None
-    description: str | None
+    overview: str | None
     snippet: str | None
     phones: set[str] | None
     emails: set[str] | None

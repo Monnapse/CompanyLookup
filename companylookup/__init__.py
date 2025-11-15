@@ -1,7 +1,7 @@
 from .serper import SerperClient
 from .models.enums import LookupMethod
 from .models import CompanyAnalysisComplete, Company, CompanyAnalysis, OrganicResult
-from companylookup.analyze import analyze_company_list, analyze_company_snippet
+from .analyze import analyze_company_list, analyze_company_snippet
 from typing import Tuple
 
 class CompanyLookup:
@@ -58,7 +58,7 @@ class CompanyLookup:
             self, 
             company_name: str, 
             lookup_method: LookupMethod = LookupMethod.SIMPLE,
-            description: str | None = None,
+            overview: str | None = None,
         ) -> CompanyAnalysisComplete:
         """
             Perform a company lookup based on the specified lookup type.
@@ -91,7 +91,7 @@ class CompanyLookup:
         
         company_details = analyze_company_snippet(
             company_name=highest_result.title,
-            description=description,
+            overview=overview,
             website=highest_result.baseLink,
             snippet=highest_result.snippet
         )

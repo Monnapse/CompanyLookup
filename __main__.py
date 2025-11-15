@@ -96,8 +96,8 @@ if __name__ == "__main__":
 
   company_result = company_lookup.lookup(
     company_name="Momentum Telecom",
-    lookup_method=LookupMethod.ENHANCED,
-    description="MetrolineDirect specializes in telecom products and services."
+    lookup_method=LookupMethod.SIMPLE,
+    overview="MetrolineDirect specializes in telecom products and services."
   )
   # "POPP Communications" official site contact "contact" OR "support" OR "@gmail.com" OR "phone" OR "call" OR "call us" OR "email"
   # "POPP Communications" official site contact "contact" OR "support" OR "@gmail.com" OR "phone" OR "call" OR "call us" OR "email"

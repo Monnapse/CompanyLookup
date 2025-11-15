@@ -160,7 +160,7 @@ def analyze_company_list(company_name: str, target_keywords: list[str], organic_
 
 def analyze_company_snippet(
         company_name: str | None, 
-        description: str | None,
+        overview: str | None,
         website: str | None,
         snippet: str
     ) -> Company:
@@ -194,7 +194,7 @@ def analyze_company_snippet(
     company = Company(
         name=company_name,
         website=website,
-        description=description,
+        overview=overview,
         snippet=snippet,
         phones=formatted_phones,
         emails=emails
