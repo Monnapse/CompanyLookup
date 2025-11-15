@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from ..serper.types import OrganicResult
+from ..serper.models import OrganicResult
 
 class Company(BaseModel):
     name: str | None

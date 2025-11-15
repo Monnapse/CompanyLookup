@@ -1,6 +1,6 @@
 from typing import Tuple
-from .serper.types import OrganicResult
-from .types import CompanyAnalysis, Company
+from .serper.models import OrganicResult
+from .models import CompanyAnalysis, Company
 import re
 
 HIGH_PRIORITY = 1.0

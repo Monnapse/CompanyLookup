@@ -1,6 +1,6 @@
 from .serper import SerperClient
-from .types.enums import LookupMethod
-from .types import CompanyAnalysisComplete, Company, CompanyAnalysis, OrganicResult
+from .models.enums import LookupMethod
+from .models import CompanyAnalysisComplete, Company, CompanyAnalysis, OrganicResult
 from companylookup.analyze import analyze_company_list, analyze_company_snippet
 from typing import Tuple
 

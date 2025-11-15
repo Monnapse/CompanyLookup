@@ -1,7 +1,7 @@
 import requests
 import json
 
-from .types import (
+from .models import (
     SearchResponse,
     SearchParameters,
     KnowledgeGraph,
