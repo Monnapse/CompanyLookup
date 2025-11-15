@@ -48,9 +48,9 @@ class OrganicResult(BaseModel):
 
 class PeopleAlsoAskItem(BaseModel):
     question: str
-    snippet: Optional[str]
-    title: Optional[str]
-    link: Optional[str]
+    snippet: Optional[str] = None
+    title: Optional[str] = None
+    link: Optional[str] = None
 
 class RelatedSearch(BaseModel):
     query: str
